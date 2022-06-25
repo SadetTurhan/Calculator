@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 20vh 30vh 30vh 20vh;
+    grid-template-areas: "header"
+    "hero"
+    "hero"
+    "footer";
+}
+
+.header{
+    grid-area: header;
+    background-color: #18181B;
+}
+
+.hero{
+    grid-area: hero;
+    background-color: #134E4A;
+}
+
+.numberarea{
+    grid-area: numberarea;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-top: 5vh;
+    border-color: #18181B;
+    border-width: 5px;
+    background-color: #D4D4D8;
+    width: 20vw;
+    margin-left: 40vw;
+    height: 10vh;
+}
+
+.top1{
+    grid-area: top1;
+    display: flex;
+    justify-content: center;
+}
+.top2{
+    grid-area: top2;
+    display: flex;
+    justify-content: center;
+}
+.top3{
+    grid-area: top3;
+    display: flex;
+    justify-content: center;
+}
+.top4{
+    grid-area: top4;
+    display: flex;
+    justify-content: center;
+}
+.top5{
+    grid-area: top5;
+    display: flex;
+    justify-content: center;
+}
+.footer{
+    grid-area: footer;
+    background-color: #18181B;
+}
+button{
+    width:5vw;
+    height: 5vh;
+}
+
