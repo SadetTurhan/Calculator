@@ -1,20 +1,23 @@
-let display = document.getElementById('display');
-let buttons = Array.from(document.getElementsByClassName('buttons'));
+let result = [];
 
-buttons.map( button => {
-    button.addEventListener('click', (e) =>{
-        switch(e.target.innerText){
-            case 'C':
-                display.innerText = '';
-                break;
-            case 'del':
-                display.innerText = display.innerText.slice(0, -1);
-                break;
-            case '=':
-                display.innerText = eval(display.innerText);
-                break;
-            default:
-                display.innerText += e.target.innerText;
-        }
-    });
-});
+function add(x,y){
+    let z = x + y;
+    result.push(z);
+}
+
+function substract(x,y){
+    let z = x - y;
+    result.push(z);
+}
+
+function multiply(x,y){
+    let z = x * y;
+    result.push(z);
+}
+
+function divide(x,y){
+    let z = x / y;
+    result.push(z);
+}
+
+console.log(multiply(25,5));

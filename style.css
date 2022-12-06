@@ -1,84 +1,34 @@
-*{
-    margin: 0;
+h1{
+    text-align: center;
 }
 
 .container{
+    width: 80vw;
+    height: 80vh;
+    background-color: blue;
+}
+
+.buttons{ 
     display: grid;
-    grid-template-columns: 100vw;
-    grid-template-rows: 20vh 30vh 50vh 20vh;
-    grid-template-areas: "header"
-    "hero"
-    "hero"
-    "footer";
+    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-rows: auto;
+
+}
+button{    
+    width: 10vw;
+    height: 5vh;
 }
 
-.header{
-    grid-area: header;
-    background-color: #18181B;
-    display: flex;
-    justify-content: center;
+.displayArea{
+    background-color: green;
+    border: 5vh;
+    max-width: 30vw;
+    min-width: 30vw;
+    max-height: 8vh;
+    min-height: 8vh;
 }
 
-.header-text{
-    display: flex;
-    justify-content: center;
-    margin-top: 3vh;
-    font-size: 30px;
-    color:#2ab1a8;
+.resultText{
+    text-align: end;
+    font-size: 4vh;
 }
-
-.hero{
-    grid-area: hero;
-    background-color: #134E4A;
-}
-
-.calc{
-    max-width: 800px;
-    width: 600px;
-    margin: 6vh auto 0 auto;
-    box-shadow: 0px 0px 43px 17px #18181B;
-}
-
-#display{
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-    padding: 16px 8px;
-    font-size: 28px;
-    color: #4a7976;
-    background-color: #18181B;
-}
-.buttons{
-    display: grid;
-    border-bottom: 0.5px solid #18181B;
-    border-left: 0.5px solid #18181B;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.buttons > div{
-    border-top: 0.5px solid #18181B;
-    border-right: 0.5px solid #18181B;
-}
-
-.button{
-    border: 0.5px solid #18181B;
-    line-height: 100px;
-    text-align: center;
-    font-size: 25px;
-    cursor: pointer;
-}
-
-#equal{
-    background-color: #18181B;
-}
-
-.button:hover{
-    background-color: #18181B;
-    color: white;
-    transition: 0.5s ease-in-out ;
-}
-.footer{
-    grid-area: footer;
-    background-color: #18181B;
-}
-
