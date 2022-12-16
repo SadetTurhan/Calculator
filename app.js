@@ -5,8 +5,11 @@ let secondNumber = [];
 
 function operatingNumbers(){
 if(operator == "add"){
-    let z = firstNumber + secondNumber
+    let z = firstNumber.join("") + secondNumber.join();
     result.push(z)
+    let y = result[0] + result[1]
+    result.push(y)
+    
 }else if(operator == "substract"){
     let z = x - y;
     result.push(z);
@@ -50,104 +53,104 @@ divideButton.addEventListener("click",chooseDivide);
 
 
 let numberDisplay = document.querySelector(".displayArea");
-
+let numberDisplayValue = document.querySelector(".resultText").nodeValue;
 let number1 = document.querySelector(".numberButton1");
 number1.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
     secondNumber.push(1);
-    numberDisplay.textContent = secondNumber}
+    numberDisplay.textContent = secondNumber.join("");}
     else{
     firstNumber.push(1);
-    numberDisplay.textContent = firstNumber
+    numberDisplay.textContent = firstNumber.join("");
     };
 })
 let number2 = document.querySelector(".numberButton2");
 number2.addEventListener("click",function(){
         if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(2);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(2);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         };
 });
 let number3 = document.querySelector(".numberButton3");
 number3.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
     secondNumber.push(3);
-    numberDisplay.textContent = secondNumber}
+    numberDisplay.textContent = secondNumber.join("");}
     else{
     firstNumber.push(3);
-    numberDisplay.textContent = firstNumber
+    numberDisplay.textContent = firstNumber.join("");
     }});
 let number4 = document.querySelector(".numberButton4");
 number4.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(4);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(4);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 })
 let number5 = document.querySelector(".numberButton5");
 number5.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(5);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(5);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 })
 let number6 = document.querySelector(".numberButton6");
 number6.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(6);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(6);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 })
 let number7 = document.querySelector(".numberButton7");
 number7.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(7);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(7);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 })
 let number8 = document.querySelector(".numberButton8");
 number8.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(8);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(8);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 })
 let number9 = document.querySelector(".numberButton9");
 number9.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(9);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(9);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 });
 let number0 = document.querySelector(".numberButton0");
 number0.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
         secondNumber.push(0);
-        numberDisplay.textContent = secondNumber}
+        numberDisplay.textContent = secondNumber.join("");}
         else{
         firstNumber.push(0);
-        numberDisplay.textContent = firstNumber
+        numberDisplay.textContent = firstNumber.join("");
         }
 });
 
