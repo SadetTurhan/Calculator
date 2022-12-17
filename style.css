@@ -19,16 +19,3 @@ button{
     height: 5vh;
 }
 
-.displayArea{
-    background-color: green;
-    border: 5vh;
-    max-width: 30vw;
-    min-width: 30vw;
-    max-height: 8vh;
-    min-height: 8vh;
-}
-
-.resultText{
-    text-align: end;
-    font-size: 4vh;
-}
