@@ -130,3 +130,11 @@ equalsButton.addEventListener("click",function(){
     upperArea.textContent = "";
     displayArea.textContent = result;
 });
+
+
+
+const clearButton = document.getElementById("clear");
+clearButton.addEventListener("click",function(){
+        displayArea.textContent = 0;
+        upperArea.textContent = "";
+});

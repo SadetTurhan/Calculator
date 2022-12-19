@@ -1,21 +1,48 @@
+*{
+    margin: 0;
+}
+body{
+    background-color: #9ca3af;
+}
 h1{
     text-align: center;
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 36px;
 }
 
 .container{
-    width: 80vw;
-    height: 80vh;
-    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 6%;
 }
 
 .buttons{ 
     display: grid;
     grid-template-columns: 10vw 10vw 10vw;
     grid-template-rows: auto;
-
+    border: 2px solid black;
 }
 button{    
     width: 10vw;
     height: 5vh;
 }
 
+.firstNumber,
+.secondNumber{
+    font-size: 24px;
+    height: 35px;
+    text-align: end;
+}
+.displayArea{
+    height: 80px;
+    width: 575px;
+    background-color: #0369a1;
+    border: 2px  solid red;
+}
+
+#clear{
+    width: 575px;
+}
