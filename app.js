@@ -39,72 +39,72 @@ let displayArea = document.getElementById("secondNumber");
 let upperArea = document.getElementById("firstNumber");
 num1.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-    upperArea.textContent += 1;}
+    displayArea.textContent +=1}
     else{
-    displayArea.textContent +=1
+    upperArea.textContent += 1;
     };
 });
 num2.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 2;}
+        displayArea.textContent +=2}
         else{
-        displayArea.textContent +=2
+        upperArea.textContent += 2;
         };
 })
 num3.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 3;}
+        displayArea.textContent +=3}
         else{
-        displayArea.textContent +=3
+        upperArea.textContent += 3;
         };
 })
 num4.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 4;}
+        displayArea.textContent +=4}
         else{
-        displayArea.textContent +=4
+        upperArea.textContent += 4;
         };
 })
 num5.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 5;}
+        displayArea.textContent +=5}
         else{
-        displayArea.textContent +=5
+        upperArea.textContent += 5;
         };
 })
 num6.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 6;}
+        displayArea.textContent +=6}
         else{
-        displayArea.textContent +=6
+        upperArea.textContent += 6;
         };
 })
 num7.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 7;}
+        displayArea.textContent +=7}
         else{
-        displayArea.textContent +=7
+        upperArea.textContent += 7;
         };
 })
 num8.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 8;}
+        displayArea.textContent +=8}
         else{
-        displayArea.textContent +=8
+        upperArea.textContent += 8;
         };
 })
 num9.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 9;}
+        displayArea.textContent +=9}
         else{
-        displayArea.textContent +=9
+        upperArea.textContent += 9;
         };
 })
 num0.addEventListener("click",function(){
     if(operator == "add" || operator == "substract" || operator == "multiply" || operator == "divide"){
-        upperArea.textContent += 0;}
+        displayArea.textContent +=0}
         else{
-        displayArea.textContent +=0
+        upperArea.textContent += 0;
         };
 })
 
@@ -127,14 +127,18 @@ equalsButton.addEventListener("click",function(){
     }else if(operator == "divide"){
     result = getDisplayArea / getUpperArea;
     };
-    upperArea.textContent = "";
-    displayArea.textContent = result;
+    upperArea.textContent = result;
+    displayArea.textContent = "";
 });
 
 
 
 const clearButton = document.getElementById("clear");
 clearButton.addEventListener("click",function(){
-        displayArea.textContent = 0;
+    getDisplayArea = 0;
+    getUpperArea = 0;
+        displayArea.textContent = "";
         upperArea.textContent = "";
+    operator.pop();
+    operator.push("clear");
 });
