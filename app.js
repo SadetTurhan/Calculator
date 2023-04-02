@@ -121,11 +121,11 @@ equalsButton.addEventListener("click",function(){
     if(operator == "add"){
     result = getDisplayArea + getUpperArea;
     }else if(operator == "substract"){
-    result = getDisplayArea - getUpperArea;
+    result = getUpperArea - getDisplayArea;
     }else if(operator == "multiply"){
     result = getDisplayArea * getUpperArea;
     }else if(operator == "divide"){
-    result = getDisplayArea / getUpperArea;
+    result = getUpperArea / getDisplayArea;
     };
     upperArea.textContent = result;
     displayArea.textContent = "";
