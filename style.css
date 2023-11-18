@@ -10,6 +10,11 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 36px;
 }
+h2{
+    text-align: center;
+    margin-top: 2%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
 .container{
     display: flex;
@@ -21,13 +26,13 @@ h1{
 
 .buttons{ 
     display: grid;
-    grid-template-columns: 10vw 10vw 10vw;
+    grid-template-columns: 12vw 12vw 12vw;
     grid-template-rows: auto;
-    border: 2px solid black;
-    box-shadow: 4px 4px 2px 2px black;
+    border: 3px solid black;
+    box-shadow: 6px 6px 2px 2px black;
 }
 button{    
-    width: 10vw;
+    width: 12vw;
     height: 5vh;
 }
 
@@ -39,19 +44,19 @@ button{
 }
 .displayArea{
     height: 80px;
-    width: 575px;
+    width: 555px;
     background-color: #5aa5ce;
     border: 3px  solid black;
     box-shadow: 4px 4px black;
 }
 
 #clear{
-    width: 575px;
+    width: 553px;
 }
 
 @media screen and (min-width: 250px) and (max-width: 600px){
     #clear{
-        width: 100%;
+        width: 40%;
     }
     .displayArea{
         height: 140px;
